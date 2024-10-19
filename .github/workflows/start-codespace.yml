@@ -23,7 +23,7 @@ jobs:
      
       - name: Check Codespace Status
         run: |
-          CODESPACE_NAME="super-pancake-q79jgxpppv6jc4rvp"
+          CODESPACE_NAME="fantastic-guide-x597q4vvv9v63vgg4"
           STATUS=$(gh codespace list --json name,state | jq -r --arg name "$CODESPACE_NAME" '.[] | select(.name == $name) | .state')
 
           echo "Codespace status: $STATUS"
